@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nikhil K — Portfolio</title>
+<style>
+  :root{
+    --ink:#1c2027;
+    --paper:#f7f5f0;
+    --line:#dcd7cc;
+    --accent:#2f5d50;
+    --accent-soft:#e7efe9;
+    --muted:#6b6f76;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Segoe UI', system-ui, -apple-system, sans-serif;
+    line-height:1.55;
+  }
+  .wrap{max-width:840px;margin:0 auto;padding:0 28px;}
+
+  header.hero{
+    border-bottom:1px solid var(--line);
+    padding:64px 0 40px;
+  }
+  .hero h1{
+    font-size:2.6rem;
+    margin:0 0 6px;
+    letter-spacing:-0.02em;
+  }
+  .hero .role{
+    font-size:1.15rem;
+    color:var(--accent);
+    margin:0 0 18px;
+    font-weight:600;
+  }
+  .hero p.lede{
+    max-width:60ch;
+    color:var(--muted);
+    font-size:1.02rem;
+  }
+  .contact-row{
+    display:flex;
+    flex-wrap:wrap;
+    margin-top:22px;
+    font-size:0.92rem;
+  }
+  .contact-row a{margin:0 22px 8px 0;}
+  .contact-row a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:1px;}
+  .contact-row a:hover{border-color:var(--accent);color:var(--accent);}
+
+  section{padding:44px 0;border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  h2{
+    font-size:0.82rem;
+    text-transform:uppercase;
+    letter-spacing:0.12em;
+    color:var(--muted);
+    margin:0 0 22px;
+  }
+
+  .skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:14px 24px;
+  }
+  .skill-card{
+    background:var(--accent-soft);
+    border-radius:6px;
+    padding:16px 18px;
+  }
+  .skill-card h3{margin:0 0 4px;font-size:0.98rem;}
+  .skill-card p{margin:0;font-size:0.88rem;color:var(--muted);}
+
+  .entry{margin-bottom:28px;}
+  .entry:last-child{margin-bottom:0;}
+  .entry-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    flex-wrap:wrap;
+    gap:6px;
+  }
+  .entry-head h3{margin:0;font-size:1.05rem;}
+  .entry-head .when{font-size:0.85rem;color:var(--muted);white-space:nowrap;}
+  .entry .sub{color:var(--accent);font-size:0.88rem;font-weight:600;margin:2px 0 8px;}
+  .entry ul{margin:6px 0 0;padding-left:20px;color:var(--muted);font-size:0.94rem;}
+  .entry ul li{margin-bottom:5px;}
+
+  .proj-grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));}
+  .proj-card{border:1px solid var(--line);border-radius:8px;padding:18px 20px;background:#fff;}
+  .proj-card h3{margin:0 0 4px;font-size:1rem;}
+  .proj-card .stack{font-size:0.8rem;color:var(--accent);font-weight:600;margin-bottom:8px;}
+  .proj-card p{margin:0;font-size:0.88rem;color:var(--muted);}
+
+  .chips{display:flex;flex-wrap:wrap;gap:8px;}
+  .chip{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:999px;
+    padding:5px 13px;
+    font-size:0.85rem;
+  }
+
+  .achv{padding-left:20px;color:var(--muted);font-size:0.94rem;}
+  .achv li{margin-bottom:10px;}
+  .achv strong{color:var(--ink);}
+
+  footer{
+    padding:36px 0 60px;
+    color:var(--muted);
+    font-size:0.85rem;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+
+  @media (max-width:600px){
+    .hero h1{font-size:2rem;}
+    header.hero{padding:44px 0 32px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="hero">
+    <h1>Nikhil K</h1>
+    <p class="role">Computer Science &amp; Engineering (AI/DS) Student</p>
+    <p class="lede">B.Tech student at Alliance University with hands-on experience leading technical workshops, coordinating student teams, and building practical Python and AI/CV projects.</p>
+    <div class="contact-row">
+      <a href="mailto:mangoproject80@gmail.com">mangoproject80@gmail.com</a>
+      <a href="tel:+918125104777">+91 81251 04777</a>
+      <a href="https://linkedin.com/in/nikhil-k-4861ba436" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/mangoproject80-meow" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://leetcode.com/u/xMI7aQkieR/" target="_blank" rel="noopener">LeetCode</a>
+    </div>
+  </header>
+
+  <section id="soft-skills">
+    <h2>Soft Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Leadership</h3>
+        <p>Led a 5-member executive team running events for the Cisco Networking Club end to end.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Communication</h3>
+        <p>Trained 100+ students in a hands-on workshop, explaining technical concepts clearly to beginners.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Teamwork</h3>
+        <p>Collaborated with peers to test, validate, and deploy fixes across academic projects.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Problem Solving</h3>
+        <p>Diagnosed and resolved live configuration issues on the spot during technical sessions.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Coordination</h3>
+        <p>Managed logistics, marketing, and registration workflows, driving 83% attendance.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Responsibility</h3>
+        <p>Serving as Class Representative since 2023, coordinating faculty-student communication.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience &amp; Leadership</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Executive — Cisco Networking Club</h3>
+        <span class="when">Apr 2026 – Now</span>
+      </div>
+      <div class="sub">Alliance University</div>
+      <ul>
+        <li>Spearheaded the planning, network lab setup, and execution of a Cisco Packet Tracer simulation workshop, training 100+ students in basic routing, switching, and network troubleshooting.</li>
+        <li>Managed end-to-end event logistics, marketing, and registration workflows with a 5-member executive team, driving an 83% attendance rate across chapter initiatives.</li>
+        <li>Led participant onboarding and technical support during hands-on lab sessions, resolving live configuration issues to ensure seamless event execution.</li>
+        <li>Applied AI to UN SDG sustainability challenges, and explored Generative AI, Responsible AI, and RAG systems.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Academic Projects</h2>
+    <div class="proj-grid">
+      <div class="proj-card">
+        <h3>Net Pulse</h3>
+        <div class="stack">CMake · Python · OOP</div>
+        <p>Debugged 15+ issues in a Python internal tool and cut execution time ~20% through refactoring, improving reliability and performance.</p>
+      </div>
+      <div class="proj-card">
+        <h3>Guard</h3>
+        <div class="stack">Python · Qt</div>
+        <p>Built a directory-monitoring script that detects and logs unauthorized file changes in real time, automating alerts to cut manual monitoring effort.</p>
+      </div>
+      <div class="proj-card">
+        <h3>Layoffs Analysis</h3>
+        <div class="stack">NumPy · Pandas · Orange</div>
+        <p>Analysed a Kaggle layoffs dataset to surface industry and time-based trends, visualising patterns to support data-driven insights.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <h3>B.Tech, Computer Science &amp; Engineering — AI/DS</h3>
+        <span class="when">Graduating 2028</span>
+      </div>
+      <div class="sub">Alliance University · CGPA 8.5</div>
+    </div>
+    <div class="entry">
+      <div class="entry-head">
+        <h3>12th Grade, CBSE</h3>
+        <span class="when">2023 · 80%</span>
+      </div>
+      <div class="sub">Kendriya Vidyalaya, Mumbai</div>
+    </div>
+    <div class="entry">
+      <div class="entry-head">
+        <h3>10th Grade, CBSE</h3>
+        <span class="when">2021 · 90%</span>
+      </div>
+      <div class="sub">Kendriya Vidyalaya, Vizag AP</div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="chips">
+      <span class="chip">C</span><span class="chip">Python</span><span class="chip">C++</span>
+      <span class="chip">YOLO (v8, v11, Pose)</span><span class="chip">OpenCV</span><span class="chip">LLMs</span>
+      <span class="chip">Git / GitHub</span><span class="chip">VS Code</span><span class="chip">Jupyter</span>
+      <span class="chip">Power BI</span><span class="chip">Excel</span>
+      <span class="chip">DSA</span><span class="chip">OOP</span><span class="chip">Operating Systems</span>
+      <span class="chip">DBMS</span><span class="chip">Computer Networks</span>
+    </div>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements &amp; Certifications</h2>
+    <ul class="achv">
+      <li><strong>Smart India Hackathon 2026</strong> — advanced to the national round out of 1000+ teams, shortlisted among the top teams nationally.</li>
+      <li><strong>Class Representative</strong>, Alliance University (2023–Present).</li>
+      <li>Oracle Java Foundations Fundamentals — Oracle, 2026</li>
+      <li>Python for Data Science — Coursera / IBM, 2025</li>
+      <li>Data Structures &amp; Algorithm Design — NPTEL (IIT Kharagpur)</li>
+      <li>Prompt Engineering Certification — Udemy, 2025</li>
+      <li>Agentic AI for Beginners — Udemy, 2025</li>
+    </ul>
+  </section>
+
+  <footer>
+    <span>Nikhil K · Alliance University</span>
+    <span>mangoproject80@gmail.com</span>
+  </footer>
+
+</div>
+</body>
+</html>
